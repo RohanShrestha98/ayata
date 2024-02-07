@@ -53,7 +53,7 @@ export default function Footer() {
         © Copyright 2022 Ayata Incorporation. All rights reserved. Ayata
         Incorporation is a registered 501(c)(3) for-profit organization
       </p>
-      <img src={footer} alt="" />
+      <img src={footer} className="object-cover w-full" alt="" />
     </div>
   );
 }
