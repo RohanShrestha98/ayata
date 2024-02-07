@@ -1,4 +1,6 @@
 import { GoArrowRight } from "react-icons/go";
+import InputField from "../components/InputField";
+import { LuUploadCloud } from "react-icons/lu";
 
 export default function ContactUs() {
   return (
@@ -17,7 +19,31 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-      <div className=""></div>
+      <div className="flex flex-col gap-3 px-8 py-2">
+        <InputField placeholder={"Your Name"} />
+        <InputField placeholder={"Position"} />
+        <InputField placeholder={"Your Email"} />
+        <InputField placeholder={"Contact Number"} />
+        <textarea
+          id=""
+          cols="30"
+          rows="6"
+          placeholder="Your message to us"
+          className="border outline-none min-h-20 rounded-lg px-4 py-2"
+        ></textarea>
+        <div>
+          <label
+            htmlFor="attachment"
+            className=" bg-[#F5F5F5] font-medium text-[#344054] cursor-pointer flex flex-grow justify-center items-center gap-2 outline-none w-full rounded px-4 py-2"
+          >
+            <LuUploadCloud /> Add Attachment
+          </label>
+          <input id="attachment" className="hidden" type="file" />
+        </div>
+        <div className="flex items-center justify-center  py-2 border-[#4E5BA6] bg-[#4E5BA6] hover:bg-white text-white rounded-full cursor-pointer border gap-3 hover:text-[#4E5BA6]">
+          Submit
+        </div>
+      </div>
     </div>
   );
 }

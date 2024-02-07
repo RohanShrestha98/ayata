@@ -42,7 +42,7 @@ export default function Navbar() {
     },
   ];
   return (
-    <div className="px-32 py-4 top-0 sticky z-30 flex items-center justify-between">
+    <div className="px-32 py-4 top-0 bg-white sticky z-30 flex items-center justify-between">
       <img src={logo} className="" alt="" />
       <div className="flex gap-6 items-center  z-40">
         {navlinks?.map((nav) => {
