@@ -6,11 +6,13 @@ import ClientServed from "./pages/ClientServed";
 import ContactUs from "./pages/ContactUs";
 import Footer from "./pages/Footer";
 import Hero from "./pages/Hero";
+import LoadingFirst from "./pages/LoadingFirst";
 import WhatWeDo from "./pages/WhatWeDo";
 
 function App() {
   return (
     <div className="element" id="containerElement">
+      <LoadingFirst />
       <Navbar />
       <Hero />
       <AboutUs />

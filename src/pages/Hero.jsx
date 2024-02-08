@@ -32,7 +32,7 @@ export default function Hero() {
       repeat: -1,
     });
     gsap.to(".mouse", {
-      y: 10,
+      y: 6,
       repeat: -1,
       height: "10px",
       duration: 2,
