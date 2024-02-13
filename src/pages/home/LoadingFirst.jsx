@@ -1,5 +1,5 @@
 import { useGSAP } from "@gsap/react";
-import logo from "../../public/logo.png";
+import logo from "../../../public/logo.png";
 import { useRef } from "react";
 import gsap from "gsap";
 
@@ -46,7 +46,7 @@ export default function LoadingFirst() {
   });
   return (
     <div ref={loading}>
-      <div className="flex flex-col h-screen completeLoading justify-between px-32 py-4">
+      <div className="flex flex-col h-screen completeLoading justify-between px-32  py-4">
         <img src={logo} className="w-10 h-10 " alt="" />
         <h1 className="text-[#3F3D8F] text-5xl name text-center">Ayata Inc.</h1>
         <div className=" font-normal desc">

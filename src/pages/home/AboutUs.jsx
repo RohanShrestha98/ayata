@@ -57,9 +57,9 @@ export default function AboutUs() {
   return (
     <div
       ref={aboutUs}
-      className="h-screen flex flex-col justify-center items-center"
+      className="h-screen px-32 flex flex-col justify-center items-center"
     >
-      <div className="flex  justify-between items-start px-32  gap-4 ">
+      <div className="flex  justify-between items-start   gap-4 ">
         <div className="w-[30%]    h-[400px]">
           <p className="text-[#667085] aboutUsTitle font-normal">About us</p>
         </div>

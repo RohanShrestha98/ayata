@@ -1,16 +1,16 @@
-import logoOne from "../assets/clientimage/one.svg";
-import logoTwo from "../assets/clientimage/two.svg";
-import logoThree from "../assets/clientimage/three.svg";
-import logoFour from "../assets/clientimage/four.svg";
-import logoFive from "../assets/clientimage/five.svg";
-import logoSix from "../assets/clientimage/six.svg";
-import logoSeven from "../assets/clientimage/seven.svg";
-import logoEight from "../assets/clientimage/eight.svg";
-import logoNine from "../assets/clientimage/nine.svg";
-import logoTen from "../assets/clientimage/ten.svg";
-import logoEleven from "../assets/clientimage/eleven.svg";
-import logoTwelve from "../assets/clientimage/twelve.svg";
-import logoThirteen from "../assets/clientimage/thirteen.svg";
+import logoOne from "../../assets/clientimage/one.svg";
+import logoTwo from "../../assets/clientimage/two.svg";
+import logoThree from "../../assets/clientimage/three.svg";
+import logoFour from "../../assets/clientimage/four.svg";
+import logoFive from "../../assets/clientimage/five.svg";
+import logoSix from "../../assets/clientimage/six.svg";
+import logoSeven from "../../assets/clientimage/seven.svg";
+import logoEight from "../../assets/clientimage/eight.svg";
+import logoNine from "../../assets/clientimage/nine.svg";
+import logoTen from "../../assets/clientimage/ten.svg";
+import logoEleven from "../../assets/clientimage/eleven.svg";
+import logoTwelve from "../../assets/clientimage/twelve.svg";
+import logoThirteen from "../../assets/clientimage/thirteen.svg";
 import { GoArrowRight } from "react-icons/go";
 
 export default function ClientServed() {
@@ -30,7 +30,7 @@ export default function ClientServed() {
     logoThirteen,
   ];
   return (
-    <div className="h-full flex flex-col gap-10 bg-white px-32 py-20">
+    <div className="h-full flex flex-col px-32 gap-10 bg-white  py-20">
       <div className="grid grid-cols-2">
         <div className="flex flex-col gap-6">
           <h1 className="font-semibold text-6xl text-[#293056] leading-tight">

@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import background from "../assets/background.svg";
+import background from "../../assets/background.svg";
 import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
@@ -24,9 +24,9 @@ export default function BriefHistory() {
       y: 0,
       duration: 1,
     });
-    gsap.from(".background", {
-      width: "100%",
-    });
+    // gsap.from(".background", {
+    //   width: "100%",
+    // });
     gsap.to(".background", {
       scrollTrigger: {
         trigger: ".sdfsdf",
@@ -40,7 +40,7 @@ export default function BriefHistory() {
   return (
     <div
       ref={backgroundRef}
-      className="py-16 flex px-32 gap-10 sdfsdf  justify-center items-center"
+      className="py-16 flex px-32  gap-10 sdfsdf  justify-center items-center"
     >
       <img
         src={background}

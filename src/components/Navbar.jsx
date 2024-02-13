@@ -3,12 +3,12 @@ import { useGSAP } from "@gsap/react";
 import logo from "../../public/logo.png";
 import { GoArrowRight } from "react-icons/go";
 import gsap from "gsap";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const header = useRef();
   const [activeNav, setActiveNav] = useState(window.location.pathname);
 
-  //sequenced one-after-the-other
   const navlinks = [
     {
       id: 1,
@@ -60,14 +60,14 @@ export default function Navbar() {
     { scope: header }
   );
   return (
-    <div ref={header} className="top-0 bg-white sticky z-30">
-      <div className="px-32 header py-4  flex items-center justify-between">
+    <div ref={header} className="top-0 border-b bg-white sticky z-30 ">
+      <div className=" header py-4 px-32  flex items-center justify-between">
         <img src={logo} className="" alt="" />
         <div className="flex gap-6 items-center  z-40">
           {navlinks?.map((nav) => {
             return (
-              <div
-                // to={nav?.link}
+              <Link
+                to={nav?.link}
                 onClick={() => setActiveNav(nav?.link)}
                 className={`text-sm  cursor-pointer  ${
                   activeNav === nav?.link
@@ -77,7 +77,7 @@ export default function Navbar() {
                 key={nav?.id}
               >
                 {nav?.name}
-              </div>
+              </Link>
             );
           })}
         </div>

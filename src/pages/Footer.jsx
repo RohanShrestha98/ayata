@@ -8,8 +8,12 @@ import { BsSend } from "react-icons/bs";
 import { IoLocationOutline } from "react-icons/io5";
 import { GoMail } from "react-icons/go";
 import { FiPhoneCall } from "react-icons/fi";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef } from "react";
 
 export default function Footer() {
+  const logoRef = useRef();
   const socialMedia = [
     { id: 1, icon: <FiFacebook />, link: "okey" },
     { id: 1, icon: <FiInstagram />, link: "okey" },
@@ -17,9 +21,20 @@ export default function Footer() {
     { id: 1, icon: <SlSocialLinkedin />, link: "okey" },
     { id: 1, icon: <BsSend />, link: "okey" },
   ];
+
+  useGSAP(
+    () => {
+      gsap.to(".logo", {
+        rotate: "+=360",
+        duration: 4,
+        repeat: -1,
+      });
+    },
+    { scope: logoRef }
+  );
   return (
-    <div className="flex items-center flex-col gap-8 mt-40">
-      <img src={logo} alt="" />
+    <div ref={logoRef} className="flex items-center flex-col gap-8 mt-40">
+      <img className="logo" src={logo} alt="" />
       <p className="text-[#667085] w-[50%] text-sm font-normal text-center leading-5">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
         libero et velit interdum, ac aliquet odio mattis. Class aptent taciti

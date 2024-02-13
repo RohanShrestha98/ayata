@@ -1,10 +1,10 @@
 import { GoArrowRight } from "react-icons/go";
-import InputField from "../components/InputField";
+import InputField from "../../components/InputField";
 import { LuUploadCloud } from "react-icons/lu";
 
 export default function ContactUs() {
   return (
-    <div className="h-screen grid grid-cols-2 gap-20  px-32 py-24">
+    <div className="h-screen grid grid-cols-2 gap-20 px-32  py-24">
       <div className=" flex flex-col gap-12">
         <h1 className="text-[92px] font-semibold leading-none text-[#293056]">
           Let’s start <br /> something <br /> <i>together</i>

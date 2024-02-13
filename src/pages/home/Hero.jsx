@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import circle from "../assets/circle.svg";
+import circle from "../../assets/circle.svg";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 export default function Hero() {
