@@ -9,6 +9,9 @@ export default {
       lg: { max: "1024px" },
       // => @media (max-width: 1024px) { ... }
 
+      ml: { max: "900px" },
+      // => @media (max-width: 900px) { ... }
+
       md: { max: "768px" },
       // => @media (max-width: 768px) { ... }
 
