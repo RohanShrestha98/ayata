@@ -4,7 +4,7 @@ import img1 from "../../assets/hiring1.svg";
 import img2 from "../../assets/hiring2.svg";
 import img3 from "../../assets/hiring3.svg";
 import img4 from "../../assets/hiring4.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Hiring() {
   const [selected, setSelected] = useState();
@@ -34,6 +34,18 @@ export default function Hiring() {
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus",
     },
   ];
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    setTimeout(() => {
+      if (count === 3) {
+        setCount(0);
+      } else {
+        setCount(count + 1);
+      }
+    }, 2000);
+    setSelected(hiringData?.[count]);
+  }, [count]);
+
   return (
     <div className="px-32  pt-16">
       <div className="flex flex-col justify-center items-center gap-6">
@@ -62,7 +74,9 @@ export default function Hiring() {
                   className={`cursor-pointer border w-9 h-9 rounded-full flex items-center justify-center ${
                     selected?.id === item?.id ? "bg-[#3E4784] text-white" : ""
                   }`}
-                  onClick={() => setSelected(item)}
+                  // onClick={() => {
+                  //   setSelected(item);
+                  // }}
                 >
                   {item?.id}
                 </div>
