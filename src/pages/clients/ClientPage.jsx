@@ -2,6 +2,10 @@ import React from 'react'
 import SummeryPart from '../../components/SummeryPart'
 import BestService from './BestService'
 import NationalClients from './NationalClients'
+import NationalProjects from './NationalProjects'
+import InternationalClients from './InternationalClients'
+import InternationalProjects from './InternationalProjects'
+import LetsCollaborate from './LetsCollaborate'
 
 export default function ClientPage() {
     return (
@@ -12,6 +16,10 @@ export default function ClientPage() {
             />
             <BestService/>
             <NationalClients/>
+            <NationalProjects/>
+            <InternationalClients/>
+            <InternationalProjects/>
+            <LetsCollaborate/>
         </div>
     )
 }

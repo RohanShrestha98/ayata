@@ -15,7 +15,7 @@ import logoTwelve from "../../assets/clientimage/twelve.svg";
 import logoThirteen from "../../assets/clientimage/thirteen.svg";
 
 
-export default function NationalClients() {
+export default function InternationalClients() {
     const logoList = [
         logoOne,
         logoTwo,
@@ -32,8 +32,8 @@ export default function NationalClients() {
         logoThirteen,
     ];
     return (
-        <div className='py-24 flex flex-col gap-12 px-28'>
-            <Header title={"National Clients"} description={"Lorem ipsum dolor sit amet,ac aliquet odio matti, coscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. libero et"}/>
+        <div className='py-10 flex flex-col gap-12 px-28 bg-[#1F1F1F]'>
+            <Header className={"text-white"} title={"International Clients"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. libero et"}/>
             <div className='flex flex-wrap gap-14 items-center justify-center'>
                 {logoList.map((item) => {
                     return(
