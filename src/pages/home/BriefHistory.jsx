@@ -24,12 +24,12 @@ export default function BriefHistory() {
       y: 0,
       duration: 1,
     });
-    // gsap.from(".background", {
-    //   width: "100%",
-    // });
+    gsap.from(".background", {
+      width: "100%",
+    });
     gsap.to(".background", {
       scrollTrigger: {
-        trigger: ".sdfsdf",
+        trigger: ".background",
         toggleActions: "restart none none none",
       },
       width: "50%",
@@ -44,7 +44,7 @@ export default function BriefHistory() {
     >
       <img
         src={background}
-        className="w-[100%] h-[440px]  z-10 background object-cover"
+        className=" h-[440px]  z-10 background object-cover"
         alt=""
       />
       <div className="w-[50%] hidden  briefHistory ">
