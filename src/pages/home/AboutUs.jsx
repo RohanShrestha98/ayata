@@ -18,7 +18,7 @@ export default function AboutUs() {
         toggleActions: "restart none none none",
       },
       x: 0,
-      duration: 1,
+      duration: 0.6,
     });
     gsap.from(".aboutUsDesc", {
       x: 200,
@@ -29,7 +29,7 @@ export default function AboutUs() {
         toggleActions: "restart none none none",
       },
       x: 0,
-      duration: 1,
+      duration: 0.6,
     });
     gsap.from(".lorem", {
       x: 200,
@@ -40,7 +40,7 @@ export default function AboutUs() {
         toggleActions: "restart none none none",
       },
       x: 0,
-      duration: 1.4,
+      duration: 0.9,
     });
     gsap.from(".learnMore", {
       x: 200,
@@ -51,9 +51,10 @@ export default function AboutUs() {
         toggleActions: "restart none none none",
       },
       x: 0,
-      duration: 1.8,
+      duration: 1,
     });
   });
+
   return (
     <div
       ref={aboutUs}

@@ -6,7 +6,7 @@ import Footer from "../pages/Footer";
 export default function BaseLayout() {
   return (
     <div>
-      <LoadingFirst />
+      {/* <LoadingFirst /> */}
       <Navbar />
       <Outlet />
       <Footer />

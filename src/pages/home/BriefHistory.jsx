@@ -30,6 +30,7 @@ export default function BriefHistory() {
     gsap.to(".background", {
       scrollTrigger: {
         trigger: ".background",
+        scrub: 1,
         toggleActions: "restart none none none",
       },
       width: "50%",

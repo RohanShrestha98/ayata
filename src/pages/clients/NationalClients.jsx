@@ -1,5 +1,4 @@
-import React from 'react'
-import Header from '../../components/Header'
+import Header from "../../components/Header";
 import logoOne from "../../assets/clientimage/one.svg";
 import logoTwo from "../../assets/clientimage/two.svg";
 import logoThree from "../../assets/clientimage/three.svg";
@@ -14,33 +13,35 @@ import logoEleven from "../../assets/clientimage/eleven.svg";
 import logoTwelve from "../../assets/clientimage/twelve.svg";
 import logoThirteen from "../../assets/clientimage/thirteen.svg";
 
-
 export default function NationalClients() {
-    const logoList = [
-        logoOne,
-        logoTwo,
-        logoThree,
-        logoFour,
-        logoFive,
-        logoSix,
-        logoSeven,
-        logoEight,
-        logoNine,
-        logoTen,
-        logoEleven,
-        logoTwelve,
-        logoThirteen,
-    ];
-    return (
-        <div className='py-24 flex flex-col gap-12 px-28'>
-            <Header title={"National Clients"} description={"Lorem ipsum dolor sit amet,ac aliquet odio matti, coscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. libero et"}/>
-            <div className='flex flex-wrap gap-14 items-center justify-center'>
-                {logoList.map((item) => {
-                    return(
-                        <img src={item} alt="" />
-                    )
-                })}
-            </div>
-        </div>
-    )
+  const logoList = [
+    logoOne,
+    logoTwo,
+    logoThree,
+    logoFour,
+    logoFive,
+    logoSix,
+    logoSeven,
+    logoEight,
+    logoNine,
+    logoTen,
+    logoEleven,
+    logoTwelve,
+    logoThirteen,
+  ];
+  return (
+    <div className="py-24 flex flex-col gap-12 px-28">
+      <Header
+        title={"National Clients"}
+        description={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. libero et"
+        }
+      />
+      <div className="flex flex-wrap gap-14 items-center justify-center">
+        {logoList.map((item) => {
+          return <img key={item} src={item} alt="" />;
+        })}
+      </div>
+    </div>
+  );
 }
