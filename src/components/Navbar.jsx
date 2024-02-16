@@ -62,7 +62,15 @@ export default function Navbar() {
   return (
     <div ref={header} className="top-0 border-b bg-white sticky z-30 ">
       <div className=" header py-4 px-32  flex items-center justify-between">
-        <img src={logo} className="" alt="" />
+        <Link to={"/"}>
+          {" "}
+          <img
+            src={logo}
+            onClick={() => setActiveNav("/")}
+            className=""
+            alt=""
+          />
+        </Link>
         <div className="flex gap-6 items-center  z-40">
           {navlinks?.map((nav) => {
             return (
