@@ -5,6 +5,7 @@ import BaseLayout from "./layout/BaseLayout";
 import CareersPage from "./pages/careers/CareersPage";
 import ClientPage from "./pages/clients/ClientPage";
 import OurWorkPage from "./pages/ourworks/OurWorkPage";
+import TeamPage from "./pages/team/TeamPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/careers" element={<CareersPage />} />
             <Route path="/clients" element={<ClientPage />} />
             <Route path="/our-works" element={<OurWorkPage />} />
+            <Route path="/team" element={<TeamPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
