@@ -33,7 +33,10 @@ export default function Footer() {
     { scope: logoRef }
   );
   return (
-    <div ref={logoRef} className="flex items-center flex-col gap-8 mt-40 ">
+    <div
+      ref={logoRef}
+      className="flex items-center flex-col gap-8 pt-20 border"
+    >
       <img className="logo" src={logo} alt="" />
       <p className="text-[#667085] w-[50%] text-sm font-normal text-center leading-5">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate

@@ -7,7 +7,7 @@ export default function Header({ title, description, className }) {
         {title}
       </h1>
       <p
-        className={`text-[#667085]  text-center leading-8 font-normal w-[40%]  ${className}`}
+        className={`text-[#667085]  text-center leading-8 font-normal w-[60%]  ${className}`}
       >
         {description}
       </p>

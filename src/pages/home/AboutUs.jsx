@@ -8,6 +8,7 @@ export default function AboutUs() {
   const aboutUs = useRef();
   gsap.registerPlugin(ScrollTrigger);
   var tl = gsap.timeline();
+
   useGSAP(() => {
     gsap.from(".aboutUsTitle", {
       x: -200,
