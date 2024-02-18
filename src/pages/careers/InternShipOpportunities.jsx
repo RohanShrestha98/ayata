@@ -27,7 +27,7 @@ export default function InternShipOpportunities() {
     },
   ];
   return (
-    <div className="px-32  py-16">
+    <div className="px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4  py-16">
       <div className="flex flex-col justify-center items-center gap-6">
         <Heading title={"Internship Opportunities"} />
         <DescriptionText

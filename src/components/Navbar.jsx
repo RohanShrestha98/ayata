@@ -61,7 +61,7 @@ export default function Navbar() {
   );
   return (
     <div ref={header} className="top-0 border-b bg-white sticky z-30 ">
-      <div className=" header py-4 px-32  flex items-center justify-between">
+      <div className=" header py-4 px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4   flex items-center justify-between">
         <Link to={"/"}>
           {" "}
           <img
@@ -71,7 +71,7 @@ export default function Navbar() {
             alt=""
           />
         </Link>
-        <div className="flex gap-6 items-center  z-40">
+        <div className="flex gap-6 items-center  md:hidden  z-40">
           {navlinks?.map((nav) => {
             return (
               <Link

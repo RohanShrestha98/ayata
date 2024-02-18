@@ -89,7 +89,7 @@ export default function WhatWeDo() {
   ];
   const projectImage = [project1, project2, project3, project4];
   return (
-    <div className="bg-[#1A1A1A] px-32 py-20">
+    <div className="bg-[#1A1A1A] px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 py-20">
       <h2 className="text-[#8CC3F2] font-normal text-xl leading-6">
         What we do
       </h2>
@@ -98,23 +98,25 @@ export default function WhatWeDo() {
           return (
             <div key={item?.id} className=" border-b border-[#f9f9f9]">
               <div className="flex items-center pb-6 text-white justify-between">
-                <div className="flex items-center gap-8">
+                <div className="flex items-center gap-8 md:gap-6 sm:gap-4">
                   <div
                     className={`border ${
                       selectedAccordian === item?.id
                         ? "bg-[#AD961E] border-[#AD961E]"
                         : "border-white"
-                    }  text-[50px]  rounded-full flex justify-center items-center w-[80px] h-[80px]`}
+                    }  text-[50px] md:text-[36px] sm:text-[22px]  rounded-full flex justify-center items-center w-[80px] md:w-15 sm:w-10  h-[80px] md:h-15 sm:h-10`}
                   >
                     {item?.id}
                   </div>
-                  <h1 className="text-[58px] ">{item?.name}</h1>
+                  <h1 className="text-[58px] md:text-[40px] sm:text-[24px]">
+                    {item?.name}
+                  </h1>
                 </div>
                 <div
                   onClick={() => {
                     setSelectedAccordian(item?.id);
                   }}
-                  className="border-2 cursor-pointer border-white text-[50px] hover:text-[#1A1A1A] hover:bg-white  rounded-full flex justify-center items-center w-[80px] h-[80px]"
+                  className="border-2 cursor-pointer border-white text-[50px] md:text-[36px] sm:text-[22px] hover:text-[#1A1A1A] hover:bg-white  rounded-full flex justify-center items-center w-[80px] md:w-15 sm:w-10  h-[80px] md:h-15 sm:h-10"
                 >
                   {selectedAccordian === item?.id ? (
                     <GoArrowUp />
@@ -125,19 +127,19 @@ export default function WhatWeDo() {
               </div>
               {selectedAccordian === item?.id && (
                 <div>
-                  <div className="text-white mt-2 mb-10  flex justify-around">
-                    <div className="border-b mt-2 absolute  w-full border-[#F2E28C] "></div>
+                  <div className="text-white mt-2 mb-10 md:mb-6 sm:mb-4  flex md:flex-col justify-around">
+                    <div className="border-b mt-2 absolute  w-full border-[#F2E28C] md:hidden"></div>
                     {item?.details?.map((detail) => {
                       return (
                         <div
                           key={detail?.id}
-                          className="flex flex-col justify-center  items-center gap-4 px-10"
+                          className="flex flex-col md:flex-row justify-center md:justify-start  items-center md:items-start gap-4 px-10 md:px-0 md:mb-4"
                         >
-                          <div className="w-4 h-4 rounded-full border-4  bg-[#1A1A1A] z-20 border-[#F2E28C]"></div>
-                          <h1 className="text-[#F2E28C] mt-1 text-base">
+                          <div className="w-4 h-4 rounded-full border-4 md:hidden  bg-[#1A1A1A] z-20 border-[#F2E28C]"></div>
+                          <h1 className="text-[#F2E28C] mt-1 md:mt-0 text-base md:min-w-[120px] ">
                             {detail?.name}
                           </h1>
-                          <p className="text-center text-[#E4E7EC] text-sm">
+                          <p className="text-center md:text-left text-[#E4E7EC] text-sm">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit.
                           </p>
@@ -145,11 +147,11 @@ export default function WhatWeDo() {
                       );
                     })}
                   </div>
-                  <div className="flex flex-col gap-4 mb-10">
+                  <div className="flex flex-col gap-4 sm:gap-2 mb-10">
                     <h1 className="text-base font-medium text-[#F2F4F7]">
                       PROJECTS
                     </h1>
-                    <div className="grid grid-cols-4 gap-6">
+                    <div className="grid grid-cols-4 md:grid-cols-2 gap-6 md:ap-4 sm:gap-2">
                       {projectImage?.map((img) => {
                         return (
                           <img

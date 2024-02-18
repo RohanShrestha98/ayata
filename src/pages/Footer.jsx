@@ -35,10 +35,10 @@ export default function Footer() {
   return (
     <div
       ref={logoRef}
-      className="flex items-center flex-col gap-8 pt-20 border"
+      className="flex items-center flex-col gap-8  pt-20 border"
     >
       <img className="logo" src={logo} alt="" />
-      <p className="text-[#667085] w-[50%] text-sm font-normal text-center leading-5">
+      <p className="text-[#667085] md:px-6 sm:px-4 w-[50%] md:w-full text-sm font-normal text-center leading-5">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
         libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
         sociosqu ad litora torquent per conubia velit interdum, ac aliquet odio
@@ -56,14 +56,14 @@ export default function Footer() {
           );
         })}
       </div>
-      <p className="text-[#3E4784] border w-full flex items-center justify-center gap-4 text-center text-sm py-2">
+      <p className="text-[#3E4784] border md:px-6 sm:px-4 w-full flex items-center justify-center gap-4 text-center text-sm py-2">
         <div className="flex items-center gap-2">
           <IoLocationOutline size={18} /> Anamnagar - 10, Kathmandu
         </div>
         <div className="flex items-center gap-2">
           <GoMail size={16} /> hi@ayata.com.np
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 sm:hidden">
           <FiPhoneCall size={16} /> 92384878484
         </div>
       </p>

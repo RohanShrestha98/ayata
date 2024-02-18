@@ -12,7 +12,7 @@ export default function SummeryPart({
 }) {
   return (
     <div
-      className={`relative h-[80vh] flex items-center overflow-hidden px-32 gap-2 ${className}`}
+      className={`relative h-[80vh] flex items-center overflow-hidden px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 gap-2 ${className}`}
     >
       <div className="w-[60%] z-20 flex flex-col gap-6">
         <h1 className="text-[#293056] font-bold leading-snug text-6xl">

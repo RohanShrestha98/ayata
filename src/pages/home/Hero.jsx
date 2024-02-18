@@ -39,14 +39,14 @@ export default function Hero() {
     });
   });
   return (
-    <div ref={hero} className="px-32">
+    <div ref={hero} className="px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4">
       <div className="h-[84vh] relative flex flex-col items-center justify-center">
-        <h1 className="text-[200px] text-center text-[#F7F7F7E5]">
+        <h1 className="text-[200px] md:text-[160px] sm:text-[100px] text-center text-[#F7F7F7E5]">
           Ayata Inc.
         </h1>
         <img
           src={circle}
-          className="absolute circle min-w-[600px]  min-h-[600px]"
+          className="absolute circle min-w-[600px]  min-h-[600px] md:min-w-[400px] md:min-h-[400px] sm:min-w-[300px] sm:min-h-[300px]"
           alt=""
         />
         <p className="text-[#293056] tracking-[10px] future absolute font-medium text-xl">

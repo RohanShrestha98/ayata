@@ -41,7 +41,7 @@ export default function BestService() {
     },
   ];
   return (
-    <div className="text-[#FCFCFD] relative bg-[#1F1F1F] py-12 px-32">
+    <div className="text-[#FCFCFD] relative bg-[#1F1F1F] py-12 px-32 xl:px-24 lg:px-16 ml:px-10">
       <div className="absolute top-0 -mt-10">
         <QuoteSvg />
       </div>
