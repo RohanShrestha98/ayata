@@ -30,10 +30,10 @@ export default function ClientServed() {
     logoThirteen,
   ];
   return (
-    <div className="h-full flex flex-col px-32 gap-10 bg-white  py-20">
-      <div className="grid grid-cols-2">
-        <div className="flex flex-col gap-6">
-          <h1 className="font-semibold text-6xl text-[#293056] leading-tight">
+    <div className="h-full flex flex-col px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 gap-10 bg-white  py-20">
+      <div className="grid grid-cols-2 md:grid-cols-1">
+        <div className="flex flex-col gap-6 md:gap-4">
+          <h1 className="font-semibold text-6xl md:text-4xl text-[#293056] leading-tight">
             Clients <br /> we’ve served
           </h1>
           <p className="leading-8  text-[#667085]">

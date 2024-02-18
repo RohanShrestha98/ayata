@@ -4,9 +4,9 @@ import { LuUploadCloud } from "react-icons/lu";
 
 export default function ContactUs() {
   return (
-    <div className="h-screen grid grid-cols-2 gap-20 px-32  py-24">
+    <div className="h-screen md:h-full  grid grid-cols-2 md:grid-cols-1 gap-20 px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4  py-24">
       <div className=" flex flex-col gap-12">
-        <h1 className="text-[92px] font-semibold leading-none text-[#293056]">
+        <h1 className="text-[92px] md:text-[80px] sm:text-[60px] font-semibold leading-none text-[#293056]">
           Let’s start <br /> something <br /> <i>together</i>
         </h1>
         <p className="text-[#667085] text-base font-normal">
@@ -19,7 +19,7 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-3 px-8 py-2">
+      <div className="flex flex-col gap-3 px-8 md:px-6 sm:px-0 py-2">
         <InputField placeholder={"Your Name"} />
         <InputField placeholder={"Position"} />
         <InputField placeholder={"Your Email"} />

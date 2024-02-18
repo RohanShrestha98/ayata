@@ -52,7 +52,7 @@ export default function CurrentOpening() {
   return (
     <div className="  pt-16">
       <CustomSlider />
-      <div className="px-32 pt-16">
+      <div className="px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 pt-16">
         <div className="flex flex-col justify-center items-center gap-6">
           <Heading title={"Current Openings"} />
           <DescriptionText

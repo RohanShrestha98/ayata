@@ -104,7 +104,7 @@ export default function TechnicalTeam() {
   ];
 
   return (
-    <div className="px-32 py-20 flex flex-col gap-10">
+    <div className="px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 py-20 flex flex-col gap-10">
       <Header
         title={"Meet our Technical team"}
         description={

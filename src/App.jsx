@@ -10,7 +10,7 @@ import ContactPage from "./pages/contactus/ContactPage";
 
 function App() {
   return (
-    <div className="element" id="containerElement">
+    <div className="element w-[100vw] overflow-x-hidden" id="containerElement">
       <BrowserRouter>
         <Routes>
           <Route element={<BaseLayout />}>

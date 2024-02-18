@@ -8,7 +8,7 @@ import Button from "../../components/Button";
 
 export default function OurWorkPage() {
   return (
-    <div className="px-32 py-16 flex flex-col gap-24 ">
+    <div className="px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 py-16 flex flex-col gap-24 ">
       <OurWork />
       <AboutProject
         img={dishome}

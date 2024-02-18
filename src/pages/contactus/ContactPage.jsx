@@ -14,7 +14,7 @@ export default function ContactPage() {
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. libero et"
         }
       />
-      <div className="px-32 py-20">
+      <div className="px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 py-20">
         <div className="flex ">
           <div className="w-3/5 flex flex-col gap-2">
             <h1 className="text-[#193E4D] text-2xl font-medium ">

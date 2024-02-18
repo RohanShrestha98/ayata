@@ -19,7 +19,7 @@ export default function TeamPage() {
         }
       />
       <img src={team} className="w-full  h-[360px] object-cover" alt="" />
-      <div className="py-20 flex flex-col gap-16 px-32 ">
+      <div className="py-20 flex flex-col gap-16 px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 ">
         <Header
           title={"Executive Members"}
           description={

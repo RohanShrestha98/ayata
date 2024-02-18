@@ -3,7 +3,7 @@ import Button from "../../components/Button";
 
 export default function CareerBanner() {
   return (
-    <div className="bg-black relative flex items-center h-[280px] px-32 overflow-hidden w-full">
+    <div className="bg-black relative flex items-center h-[280px] px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 overflow-hidden w-full">
       <div className="flex flex-col gap-5">
         <p className="text-[#F2F4F7] font-normal text-2xl">
           Don’t see the internship you’re looking for? <br /> Worry not. Apply
