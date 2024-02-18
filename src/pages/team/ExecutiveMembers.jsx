@@ -37,25 +37,31 @@ export default function ExecutiveMembers({
   ];
   return (
     <div
-      className={`flex  gap-10 w-[92%] ${
-        isReverse && "ml-[8%] flex-row-reverse"
+      className={`flex md:flex-col items-start gap-10 md:gap-6 sm:gap-4 w-[92%] md:w-full ${
+        isReverse && "ml-[8%] md:ml-0 flex-row-reverse"
       }`}
     >
-      <img className="w-2/5" src={img} alt="" />
-      <div className="flex w-3/5 flex-col gap-8">
+      <img className="w-2/5 md:w-full" src={img} alt="" />
+      <div className="flex w-3/5 md:w-full flex-col gap-8 md:gap-6 sm:gap-4">
         <div className="flex flex-col gap-2">
           <p
             className={`text-[#475467] font-semibold uppercase ${
-              isReverse && "text-end"
+              isReverse && "text-end md:text-start"
             } `}
           >
             {name}
           </p>
-          <p className={`text-[#98A2B3] text-sm ${isReverse && "text-end"}`}>
+          <p
+            className={`text-[#98A2B3] text-sm ${
+              isReverse && "text-end md:text-start"
+            }`}
+          >
             {position}
           </p>
           <div
-            className={`flex gap-3 items-center  ${isReverse && "justify-end"}`}
+            className={`flex gap-3 items-center  ${
+              isReverse && "justify-end md:justify-start"
+            }`}
           >
             {socialLinkList?.map((item) => {
               return (
@@ -67,8 +73,11 @@ export default function ExecutiveMembers({
           </div>
         </div>
 
-        <FaQuoteLeft size={40} className="text-[#475467]" />
-        <p className="text-[#667085] italic leading-loose"> {description}</p>
+        <FaQuoteLeft className="text-[#475467] text-[40px] md:text-[30px] sm:text-[20px]" />
+        <p className="text-[#667085] italic leading-loose md:text-base sm:text-sm">
+          {" "}
+          {description}
+        </p>
       </div>
     </div>
   );

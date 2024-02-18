@@ -6,8 +6,8 @@ import laptop from "../../assets/laptop.svg";
 
 export default function WebApplication() {
   return (
-    <div className="grid grid-cols-2 gap-10">
-      <div className="flex flex-col gap-8">
+    <div className="grid grid-cols-2 md:grid-cols-1 gap-10">
+      <div className="flex flex-col gap-8 md:gap-6 sm:gap-4">
         <Heading title={"Web Application Development"} />
         <DescriptionText
           description={
@@ -19,7 +19,7 @@ export default function WebApplication() {
           <img src={project2} className="h-full object-cover w-full" alt="" />
         </div>
       </div>
-      <div>
+      <div className="md:hidden">
         <img className="h-full object-cover w-full " src={laptop} alt="" />
       </div>
     </div>

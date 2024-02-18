@@ -1,4 +1,3 @@
-import React from "react";
 import { QuoteSvg, PumaSvg } from "../../assets/allSvg";
 import Slider from "react-slick";
 
@@ -41,14 +40,17 @@ export default function BestService() {
     },
   ];
   return (
-    <div className="text-[#FCFCFD] relative bg-[#1F1F1F] py-12 px-32 xl:px-24 lg:px-16 ml:px-10">
+    <div className="text-[#FCFCFD] relative bg-[#1F1F1F] py-12 px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4">
       <div className="absolute top-0 -mt-10">
         <QuoteSvg />
       </div>
       <Slider {...settings}>
         {clientSliderList.map((item) => {
           return (
-            <div key={item.id} className="flex flex-col px-36 text-center">
+            <div
+              key={item.id}
+              className="flex flex-col px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 text-center"
+            >
               <p className="text-xl font-medium uppercase">{item.title}</p>
               <p className="italic leading-8 my-4">{item.message}</p>
               <div className=" flex justify-center ">{item.icon}</div>

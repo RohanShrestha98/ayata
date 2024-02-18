@@ -51,11 +51,11 @@ export default function Hiring() {
       <div className="flex flex-col justify-center items-center gap-6">
         <Heading title={"Our Hiring Process"} />
         <DescriptionText
-          className={"w-[50%] text-center"}
+          className={"w-[50%] md:w-[90%] text-center"}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. libero et"
         />
-        <div className="flex justify-between w-full gap-12 mt-6">
-          <div className="flex gap-6">
+        <div className="flex justify-between md:flex-col w-full gap-12 mt-6">
+          <div className="flex gap-6 md:flex-col">
             <img src={selected?.img ?? hiringData?.[0]?.img} alt="" />
             <div className="flex flex-col  gap-5">
               <h1 className="text-[#3E4784] text-base font-semibold">
@@ -66,7 +66,7 @@ export default function Hiring() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-4 md:hidden">
             {hiringData?.map((item) => {
               return (
                 <div

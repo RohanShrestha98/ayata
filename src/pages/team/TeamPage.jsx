@@ -18,8 +18,12 @@ export default function TeamPage() {
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. libero et"
         }
       />
-      <img src={team} className="w-full  h-[360px] object-cover" alt="" />
-      <div className="py-20 flex flex-col gap-16 px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 ">
+      <img
+        src={team}
+        className="w-full  h-[360px] md:h-full object-cover"
+        alt=""
+      />
+      <div className="py-20 md:py-16 flex flex-col gap-16 px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 ">
         <Header
           title={"Executive Members"}
           description={
@@ -50,11 +54,15 @@ export default function TeamPage() {
             interdum”"
         />
       </div>
-      <img src={team} className="w-full h-[360px] object-cover" alt="" />
+      <img
+        src={team}
+        className="w-full h-[360px] md:h-full object-cover"
+        alt=""
+      />
       <TechnicalTeam />
 
       <div className="flex flex-col gap-8 items-center">
-        <h1 className="text-5xl text-center text-[#293056] leading-snug">
+        <h1 className="text-5xl md:text-3xl sm:text-2xl text-center text-[#293056] leading-snug">
           Wanna be a part of Team Ayata?
         </h1>
         <Button buttonName={"hi@ayata.com.np"} width={240} />
