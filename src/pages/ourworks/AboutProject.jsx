@@ -2,9 +2,17 @@
 import DescriptionText from "../../components/DescriptionText";
 export default function AboutProject({ isReverse, title, description, img }) {
   return (
-    <div className={`flex ${isReverse && "flex-row-reverse"}  gap-6`}>
-      <img className="w-3/5  object-cover" src={img} alt="" />
-      <div className="flex w-2/5 flex-col gap-4 mt-4">
+    <div
+      className={`flex ${
+        isReverse && "flex-row-reverse sm:flex-row"
+      } sm:flex-col  gap-6 `}
+    >
+      <img
+        className="w-3/5 md:w-1/2 sm:w-full  object-cover"
+        src={img}
+        alt=""
+      />
+      <div className="flex w-2/5 md:w-1/2 sm:w-full flex-col gap-4 mt-4">
         <h1 className="text-[#363F72] font-semibold text-2xl">{title}</h1>
         <DescriptionText
           className={"leading-loose"}

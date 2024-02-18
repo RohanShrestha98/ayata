@@ -21,7 +21,7 @@ export default function AllProjects({ title }) {
       <h1 className="text-[#363F72] font-semibold text-center text-2xl">
         {title}
       </h1>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 md:grid-cols-2 gap-4">
         {projects?.map((img) => {
           return (
             <img

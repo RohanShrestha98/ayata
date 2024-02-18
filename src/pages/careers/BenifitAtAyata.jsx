@@ -46,11 +46,11 @@ export default function BenifitAtAyata() {
       <div className="flex flex-col justify-center items-center gap-6">
         <Heading title={"Benefits at Ayata"} />
         <DescriptionText
-          className={"w-[50%] text-center"}
+          className={"w-[50%] md:w-[90%] text-center"}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. libero et"
         />
       </div>
-      <div className="grid mt-8 grid-cols-2 gap-8">
+      <div className="grid mt-8 grid-cols-2 md:grid-cols-1 gap-8">
         <img src={benifit} alt="" />
         <div className="flex flex-col gap-4">
           {benifitOfAyata?.map((item) => {

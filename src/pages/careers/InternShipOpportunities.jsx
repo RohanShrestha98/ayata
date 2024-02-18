@@ -31,11 +31,11 @@ export default function InternShipOpportunities() {
       <div className="flex flex-col justify-center items-center gap-6">
         <Heading title={"Internship Opportunities"} />
         <DescriptionText
-          className={"w-[50%] text-center"}
+          className={"w-[50%] md:w-[90%] text-center"}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. libero et"
         />
       </div>
-      <div className="grid grid-cols-3 gap-4 w-full mt-12">
+      <div className="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 w-full mt-12">
         {data?.map((item) => {
           return <OpeningCard key={item?.id} item={item} />;
         })}

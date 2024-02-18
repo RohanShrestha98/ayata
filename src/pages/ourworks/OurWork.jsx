@@ -6,7 +6,7 @@ import ourTeam2 from "../../assets/ourteam2.svg";
 
 export default function OurWork() {
   return (
-    <div className="grid grid-cols-2 gap-10">
+    <div className="grid grid-cols-2 md:grid-cols-1 gap-10">
       <div className="flex flex-col gap-8">
         <Heading title={"Mobile Application Development"} />
         <DescriptionText
@@ -22,7 +22,7 @@ export default function OurWork() {
           </div>
         </div>
       </div>
-      <div className="flex justify-end items-start ">
+      <div className="flex justify-end items-start md:hidden">
         <img className="z-10 w-[260px]" src={mobile} alt="" />
         <img className="-ml-20 w-[260px] pt-10 " src={mobile} alt="" />
       </div>
