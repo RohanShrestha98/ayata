@@ -8,6 +8,8 @@ import Revolutionizing from './Revolutionizing';
 import NumbersAchieved from './NumbersAchieved';
 import FutureTechnology from './FutureTechnology';
 import BOD from './BOD';
+import TechnologiesUsed from './TechnologiesUsed';
+import Button from '../../components/Button';
 
 
 export default function AboutUsPage() {
@@ -22,6 +24,13 @@ export default function AboutUsPage() {
             <NumbersAchieved/>
             <FutureTechnology/>
             <BOD/>
+            <TechnologiesUsed/>
+            <div className="flex flex-col gap-12 md:gap-8 sm:gap-6 items-center mb-[120px]">
+                <h1 className="text-5xl md:text-3xl sm:text-2xl text-center text-[#293056] leading-snug">
+                Have a project in mind? <br /> Lets collaborate
+                </h1>
+                <Button buttonName={"hi@ayata.com.np"} width={240} />
+            </div>
         </div>
     )
 }
