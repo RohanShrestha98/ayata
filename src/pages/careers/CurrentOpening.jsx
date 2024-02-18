@@ -56,11 +56,11 @@ export default function CurrentOpening() {
         <div className="flex flex-col justify-center items-center gap-6">
           <Heading title={"Current Openings"} />
           <DescriptionText
-            className={"w-[50%] text-center"}
+            className={"w-[50%] md:w-[90%] text-center"}
             description=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
         libero et velit interdum, ac aliquet odio mattis. libero et"
           />
-          <div className="flex items-center gap-3 px-4 h-10 w-[60%] rounded-full border">
+          <div className="flex items-center gap-3 px-4 h-10 w-[60%] md:w-[90%] rounded-full border">
             <CiSearch size={22} className="text-[#667085]" />
             <input
               className=" h-full outline-none w-full"
@@ -69,7 +69,7 @@ export default function CurrentOpening() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-4 w-full mt-12">
+        <div className="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 w-full mt-12">
           {data?.map((item) => {
             return <OpeningCard key={item?.id} item={item} />;
           })}

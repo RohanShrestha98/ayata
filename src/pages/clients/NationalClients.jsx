@@ -30,16 +30,16 @@ export default function NationalClients() {
     logoThirteen,
   ];
   return (
-    <div className="py-24 flex flex-col gap-12 px-28">
+    <div className="py-24 flex flex-col gap-12 px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4">
       <Header
         title={"National Clients"}
         description={
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. libero et"
         }
       />
-      <div className="flex flex-wrap gap-14 items-center justify-center">
-        {logoList.map((item) => {
-          return <img key={item} src={item} alt="" />;
+      <div className="flex flex-wrap gap-10 items-center justify-center">
+        {logoList?.map((item) => {
+          return <img className="grayscale " key={item} src={item} alt="" />;
         })}
       </div>
     </div>

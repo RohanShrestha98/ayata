@@ -10,6 +10,7 @@ import teammember7 from "../../assets/teammember/teammember7.svg";
 import teammember8 from "../../assets/teammember/teammember8.svg";
 import teammember9 from "../../assets/teammember/teammember9.svg";
 import teammember10 from "../../assets/teammember/teammember10.svg";
+import TeamMember from "../../components/TeamMember";
 
 export default function TechnicalTeam() {
   const [selectedId, setSelectedId] = useState(1);
@@ -104,14 +105,14 @@ export default function TechnicalTeam() {
   ];
 
   return (
-    <div className="px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 py-20 flex flex-col gap-10">
+    <div className="px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 py-20 md:py-16 flex flex-col gap-10">
       <Header
         title={"Meet our Technical team"}
         description={
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. libero et"
         }
       />
-      <div className="flex justify-center gap-4">
+      <div className="flex justify-center flex-wrap md:grid md:grid-cols-2 md:gap-2 gap-4">
         {teamTitle?.map((item) => {
           return (
             <div
@@ -120,7 +121,7 @@ export default function TechnicalTeam() {
                 item?.id === selectedId
                   ? "border-[#4E5BA6]  text-[#4E5BA6]"
                   : "border-[#666666]"
-              } cursor-pointer text-sm px-6 py-1 rounded-full`}
+              } cursor-pointer overflow-hidden line-clamp-1 text-sm px-6 md:px-4 py-1 rounded-full`}
               key={item?.id}
             >
               {item?.name}
@@ -128,25 +129,7 @@ export default function TechnicalTeam() {
           );
         })}
       </div>
-      <div className="grid grid-cols-5 gap-6">
-        {teamImages?.map((team) => {
-          return (
-            <div key={team?.id} className="flex flex-col items-center mb-4">
-              <img
-                src={team?.img}
-                className="w-full h-full object-cover rounded-lg"
-                alt=""
-              />
-              <h1 className="mt-2 uppercase text-[#5E5555] text-[13px] font-medium">
-                {team?.name}
-              </h1>
-              <h1 className="text-[#999999] text-[13px] ">
-                {team?.positionName}
-              </h1>
-            </div>
-          );
-        })}
-      </div>
+      <TeamMember data={teamImages} />
     </div>
   );
 }
