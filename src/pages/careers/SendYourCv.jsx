@@ -2,7 +2,7 @@ import lineBackground from "../../assets/linebackground.svg";
 import Button from "../../components/Button";
 export default function SendYourCv() {
   return (
-    <div className="relative h-[80vh] md:h-full md:py-16 flex items-center overflow-hidden px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 gap-2">
+    <div className="relative h-[70vh] md:h-full md:py-16 flex items-center overflow-hidden px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 gap-2">
       <div className="w-[60%] md:w-full flex flex-col gap-6">
         <h1 className="text-[#293056] font-bold leading-snug text-6xl md:text-4xl sm:text-2xl">
           Find your dream job at <br />{" "}
