@@ -8,6 +8,7 @@ import OurWorkPage from "./pages/ourworks/OurWorkPage";
 import TeamPage from "./pages/team/TeamPage";
 import ContactPage from "./pages/contactus/ContactPage";
 import AboutUsPage from "./pages/aboutUs/AboutUsPage";
+import ProjectSummary from "./pages/projectSummary/ProjectSummary";
 // import AboutUs from "./pages/home/AboutUs";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/about-us" element={<AboutUsPage/>} />
             <Route path="/contact-us" element={<ContactPage />} />
             <Route path="/team" element={<TeamPage />} />
+            <Route path="/project-summary" element={<ProjectSummary />} />
           </Route>
         </Routes>
       </BrowserRouter>

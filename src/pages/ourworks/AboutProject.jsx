@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
+import { useNavigate } from "react-router-dom";
 import DescriptionText from "../../components/DescriptionText";
 export default function AboutProject({ isReverse, title, description, img }) {
+  const navigate = useNavigate()
   return (
     <div
       className={`flex ${
@@ -8,6 +10,7 @@ export default function AboutProject({ isReverse, title, description, img }) {
       } sm:flex-col  gap-6 `}
     >
       <img
+        onClick={() => navigate("/project-summary")}
         className="w-3/5 md:w-1/2 sm:w-full  object-cover"
         src={img}
         alt=""

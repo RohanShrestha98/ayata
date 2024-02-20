@@ -16,9 +16,9 @@ export default function Button({
       className={`px-10 border  z-20 border-[#596273] text-[#596273] hover:bg-[#596273] hover:text-white cursor-pointer rounded-full   py-2 flex justify-center items-center gap-3 ${className}`}
     >
       {buttonName}
-      {/* {icon} */}
+      {icon}
       {/* <CiMail size={40} className="text-black" /> */}
-      {isArrow && <IoMdArrowForward size={22} />}
+      {isArrow && !icon && <IoMdArrowForward size={22} />}
     </button>
   );
 }
