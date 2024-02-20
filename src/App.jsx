@@ -9,6 +9,7 @@ import TeamPage from "./pages/team/TeamPage";
 import ContactPage from "./pages/contactus/ContactPage";
 import AboutUsPage from "./pages/aboutUs/AboutUsPage";
 import ProjectSummary from "./pages/projectSummary/ProjectSummary";
+import OurProductPage from "./pages/ourproducts/OurProductPage";
 // import AboutUs from "./pages/home/AboutUs";
 
 function App() {
@@ -21,8 +22,9 @@ function App() {
             <Route path="/careers" element={<CareersPage />} />
             <Route path="/clients" element={<ClientPage />} />
             <Route path="/our-works" element={<OurWorkPage />} />
-            <Route path="/about-us" element={<AboutUsPage/>} />
+            <Route path="/about-us" element={<AboutUsPage />} />
             <Route path="/contact-us" element={<ContactPage />} />
+            <Route path="/our-products" element={<OurProductPage />} />
             <Route path="/team" element={<TeamPage />} />
             <Route path="/project-summary" element={<ProjectSummary />} />
           </Route>

@@ -26,6 +26,11 @@ export default function Navbar() {
       link: "/our-works",
     },
     {
+      id: 8,
+      name: "Our Products",
+      link: "/our-products",
+    },
+    {
       id: 4,
       name: "Clients",
       link: "/clients",
