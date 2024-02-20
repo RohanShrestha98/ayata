@@ -16,10 +16,12 @@ export default function SummeryPart({
     >
       <div className="w-[60%] z-20 flex flex-col gap-6">
         {aboutUs && <p className="text-[#667085] text-base"> About us</p>}
-        <h1 className={`text-[#293056] font-bold leading-snug text-6xl ${className}`}>
+        <h1
+          className={`text-[#293056] font-bold leading-snug text-6xl ${className}`}
+        >
           {title1} <br /> <span className="text-[#667085]">{title2}</span>
         </h1>
-        <p className="text-[#667085] leading-normal ">{message}</p>
+        <p className="text-[#667085] leading-loose ">{message}</p>
       </div>
       {!noImage && (
         <img
