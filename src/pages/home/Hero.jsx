@@ -11,6 +11,7 @@ export default function Hero() {
         rotate: "+=360",
         duration: 4,
         repeat: -1,
+        yoyo: true,
       }).to(".circle", {
         duration: 4,
       });

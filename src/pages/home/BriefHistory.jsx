@@ -6,36 +6,36 @@ import { useRef } from "react";
 export default function BriefHistory() {
   const backgroundRef = useRef();
 
-  // gsap.registerPlugin(ScrollTrigger);
-  // useGSAP(() => {
-  //   gsap.from(".briefHistory", {
-  //     opacity: 0,
-  //     x: -300,
-  //     y: 300,
-  //   });
-  //   gsap.to(".briefHistory", {
-  //     scrollTrigger: {
-  //       trigger: ".sdfsdf",
-  //       toggleActions: "restart none none none",
-  //     },
-  //     opacity: 1,
-  //     x: 0,
-  //     y: 0,
-  //     duration: 1,
-  //   });
-  //   gsap.from(".background", {
-  //     width: "100%",
-  //   });
-  //   gsap.to(".background", {
-  //     scrollTrigger: {
-  //       trigger: ".background",
-  //       scrub: 1,
-  //       toggleActions: "restart none none none",
-  //     },
-  //     // width: "50%",
-  //     duration: 1,
-  //   });
-  // });
+  gsap.registerPlugin(ScrollTrigger);
+  useGSAP(() => {
+    gsap.from(".briefHistory", {
+      opacity: 0,
+      x: -300,
+      y: 300,
+    });
+    gsap.to(".briefHistory", {
+      scrollTrigger: {
+        trigger: ".sdfsdf",
+        toggleActions: "restart none none none",
+      },
+      opacity: 1,
+      x: 0,
+      y: 0,
+      duration: 1,
+    });
+    gsap.from(".background", {
+      width: "100%",
+    });
+    gsap.to(".background", {
+      scrollTrigger: {
+        trigger: ".background",
+        scrub: 1,
+        toggleActions: "restart none none none",
+      },
+      width: "50%",
+      duration: 1,
+    });
+  });
 
   return (
     <div

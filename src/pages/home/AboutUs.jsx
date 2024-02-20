@@ -6,55 +6,55 @@ import { IoMdArrowForward } from "react-icons/io";
 
 export default function AboutUs() {
   const aboutUs = useRef();
-  // gsap.registerPlugin(ScrollTrigger);
-  // var tl = gsap.timeline();
+  gsap.registerPlugin(ScrollTrigger);
+  var tl = gsap.timeline();
 
-  // useGSAP(() => {
-  //   gsap.from(".aboutUsTitle", {
-  //     x: -200,
-  //   });
-  //   gsap.to(".aboutUsTitle", {
-  //     scrollTrigger: {
-  //       trigger: ".aboutUs",
-  //       toggleActions: "restart none none none",
-  //     },
-  //     x: 0,
-  //     duration: 0.6,
-  //   });
-  //   gsap.from(".aboutUsDesc", {
-  //     x: 200,
-  //   });
-  //   gsap.to(".aboutUsDesc", {
-  //     scrollTrigger: {
-  //       trigger: ".aboutUs",
-  //       toggleActions: "restart none none none",
-  //     },
-  //     x: 0,
-  //     duration: 0.6,
-  //   });
-  //   gsap.from(".lorem", {
-  //     x: 200,
-  //   });
-  //   gsap.to(".lorem", {
-  //     scrollTrigger: {
-  //       trigger: ".aboutUs",
-  //       toggleActions: "restart none none none",
-  //     },
-  //     x: 0,
-  //     duration: 0.9,
-  //   });
-  //   gsap.from(".learnMore", {
-  //     x: 200,
-  //   });
-  //   gsap.to(".learnMore", {
-  //     scrollTrigger: {
-  //       trigger: ".aboutUs",
-  //       toggleActions: "restart none none none",
-  //     },
-  //     x: 0,
-  //     duration: 1,
-  //   });
-  // });
+  useGSAP(() => {
+    gsap.from(".aboutUsTitle", {
+      x: -200,
+    });
+    gsap.to(".aboutUsTitle", {
+      scrollTrigger: {
+        trigger: ".aboutUs",
+        toggleActions: "restart none none none",
+      },
+      x: 0,
+      duration: 0.6,
+    });
+    gsap.from(".aboutUsDesc", {
+      x: 200,
+    });
+    gsap.to(".aboutUsDesc", {
+      scrollTrigger: {
+        trigger: ".aboutUs",
+        toggleActions: "restart none none none",
+      },
+      x: 0,
+      duration: 0.6,
+    });
+    gsap.from(".lorem", {
+      x: 200,
+    });
+    gsap.to(".lorem", {
+      scrollTrigger: {
+        trigger: ".aboutUs",
+        toggleActions: "restart none none none",
+      },
+      x: 0,
+      duration: 0.9,
+    });
+    gsap.from(".learnMore", {
+      x: 200,
+    });
+    gsap.to(".learnMore", {
+      scrollTrigger: {
+        trigger: ".aboutUs",
+        toggleActions: "restart none none none",
+      },
+      x: 0,
+      duration: 1,
+    });
+  });
 
   return (
     <div
