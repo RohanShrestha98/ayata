@@ -8,6 +8,7 @@ import OurWorkPage from "./pages/ourworks/OurWorkPage";
 import TeamPage from "./pages/team/TeamPage";
 import ContactPage from "./pages/contactus/ContactPage";
 import AboutUsPage from "./pages/aboutUs/AboutUsPage";
+import ProjectSummary from "./pages/projectSummary/ProjectSummary";
 import OurProductPage from "./pages/ourproducts/OurProductPage";
 // import AboutUs from "./pages/home/AboutUs";
 
@@ -25,6 +26,7 @@ function App() {
             <Route path="/contact-us" element={<ContactPage />} />
             <Route path="/our-products" element={<OurProductPage />} />
             <Route path="/team" element={<TeamPage />} />
+            <Route path="/project-summary" element={<ProjectSummary />} />
           </Route>
         </Routes>
       </BrowserRouter>
