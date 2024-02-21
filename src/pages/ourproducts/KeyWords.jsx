@@ -3,7 +3,7 @@ import { GoDotFill } from "react-icons/go";
 
 export default function KeyWords() {
         return (
-            <div className='flex flex-col gap-4 justify-center items-center py-5 mb-32'>
+            <div className='flex flex-col gap-4 justify-center items-center py-5 mb-32 md:mb-10'>
                 <p className='uppercase text-[#363F72] text-xl'>LearnVista</p>
                 <div className=' flex gap-6'>
                     <p className='uppercase text-[#363F72] text-xl'>LearnVista</p>

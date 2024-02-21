@@ -13,7 +13,7 @@ import LetsCollaborateComp from "../../components/LetsCollaborateComp";
 
 export default function OurProductPage() {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 md:gap-3">
       <Solution />
       <SummeryPart
         title1={"Avyaas"}

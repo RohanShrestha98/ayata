@@ -1,5 +1,6 @@
 import logo from "../../public/logo.png";
 import footer from "../assets/footer.svg";
+import wave from "../assets/wave.svg";
 import { FiInstagram } from "react-icons/fi";
 import { FiFacebook } from "react-icons/fi";
 import { FiGithub } from "react-icons/fi";
@@ -71,7 +72,7 @@ export default function Footer() {
         © Copyright 2022 Ayata Incorporation. All rights reserved. Ayata
         Incorporation is a registered 501(c)(3) for-profit organization
       </p>
-      <img src={footer} className="object-cover w-full" alt="" />
+      <img src={wave} className="object-cover w-full ransform rotate-180" alt="" />
     </div>
   );
 }
