@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
+import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button";
 
 export default function OpeningCard({ item }) {
+  const navigate = useNavigate();
   return (
     <div className="bg-[#F8F9FC] p-6 rounded-md">
       <h1 className="text-[#363F72] font-normal text-lg">{item?.title}</h1>
@@ -17,6 +19,7 @@ export default function OpeningCard({ item }) {
         Post Opening : {item?.opening}
       </p>
       <Button
+        handleButtonClick={() => navigate("/career-detail")}
         buttonName={"Apply now"}
         className={"w-full mt-10 py-1 text-sm"}
       />

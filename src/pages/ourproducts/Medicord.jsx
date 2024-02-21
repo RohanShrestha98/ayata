@@ -1,6 +1,10 @@
 import React from 'react'
 import dashboard from "../../assets/dashboard.png";
-import Revolution from './Revolution';
+
+import ProductDescription from '../../components/ProductDescription';
+// import product4 from "../../assets/product4.png"
+import product2 from "../../assets/product2.png";
+
 
 export default function Medicord() {
     const amountList = [
@@ -34,7 +38,7 @@ export default function Medicord() {
                     )
                 })}
             </div>
-            <Revolution/>
+            <ProductDescription dark isImage image={product2}/>
         </div>
     )
 }

@@ -18,12 +18,13 @@ export default function AboutProject({ isReverse, title, description, img }) {
   return (
     <div
       ref={aboutProjectRef}
+      onClick={() => navigate("/project-summary")}
       className={`flex ${
         isReverse && "flex-row-reverse sm:flex-row"
       } sm:flex-col  gap-6 `}
     >
       <div className="relative w-3/5 md:w-1/2 sm:w-full ">
-        <img className="w-full  object-cover" src={img} alt="" />
+        <img  className="w-full  object-cover" src={img} alt="" />
         <div className="absolute top-0 w-full h-full hover:bg-blue-800 z-20 opacity-25 rounded-lg"></div>
       </div>
 

@@ -10,6 +10,7 @@ import ContactPage from "./pages/contactus/ContactPage";
 import AboutUsPage from "./pages/aboutUs/AboutUsPage";
 import ProjectSummary from "./pages/projectSummary/ProjectSummary";
 import OurProductPage from "./pages/ourproducts/OurProductPage";
+import CareerDetailPage from "./pages/careerDetail/CareerDetailPage";
 // import AboutUs from "./pages/home/AboutUs";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/our-products" element={<OurProductPage />} />
             <Route path="/team" element={<TeamPage />} />
             <Route path="/project-summary" element={<ProjectSummary />} />
+            <Route path="/career-detail" element={<CareerDetailPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
