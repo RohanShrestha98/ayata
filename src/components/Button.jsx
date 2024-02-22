@@ -13,10 +13,10 @@ export default function Button({
   return (
     <button
       onClick={() => handleButtonClick()}
-      className={`px-10 border  z-20 border-[#596273] text-[#596273] hover:bg-[#596273] hover:text-white cursor-pointer rounded-full   py-2 flex justify-center items-center gap-3 ${className}`}
+      className={`px-10 border md:text-sm z-20 border-[#596273] text-[#596273] hover:bg-[#596273] hover:text-white cursor-pointer rounded-full   py-2 flex justify-center items-center gap-3 ${className}`}
     >
       {buttonName}
-      {icon}
+      <img src={icon} alt="" />
       {/* <CiMail size={40} className="text-black" /> */}
       {isArrow && !icon && <IoMdArrowForward size={22} />}
     </button>
