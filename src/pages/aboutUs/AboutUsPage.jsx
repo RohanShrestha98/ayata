@@ -10,17 +10,19 @@ import FutureTechnology from './FutureTechnology';
 import BOD from './BOD';
 import TechnologiesUsed from './TechnologiesUsed';
 import Button from '../../components/Button';
+import ProductDescription from '../../components/ProductDescription';
 
 
 export default function AboutUsPage() {
     return (
         <div>
             <SummeryPart aboutUs className={"text-[40px] h-[50%] pt-16 py-5"} title1={"Tech Solutions with a Personal Touch: Crafting Your Digital Success Story"}/>
-            <img src={team} className="w-full  h-[480px] object-cover" alt="" />
+            <img src={team} className="w-full  h-[480px] md:h-full object-cover" alt="" />
             <Quoted/>
             <AyataInc/>
             <WhatWeDo/>
-            <Revolutionizing/>
+            {/* <Revolutionizing/> */}
+            <ProductDescription />
             <NumbersAchieved/>
             <FutureTechnology/>
             <BOD/>

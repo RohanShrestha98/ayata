@@ -14,21 +14,23 @@ export default function Medicord() {
         {id:4, amount:"30+", title: "Team Members", message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit"},
     ]
     return (
-        <div className='bg-[#1D1D20] px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 py-20 flex flex-col gap-[120px]'>
-            <div className='flex gap-[66px] '>
-                <div className='flex w-[60%] flex-col gap-6'>
+        <div className='bg-[#1D1D20] px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 py-20 flex flex-col gap-[120px] lg:gap-10'>
+            <div className='flex md:flex-col gap-[66px] '>
+                <div className='flex w-[60%] md:w-full flex-col gap-6'>
                     <p className='text-[#EAECF5] text-6xl font-medium '>Medicord</p>
                     <p className='leading-[40px] text-[#D0D5DD]'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. libero et Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum libero et Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdumlibero et Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum
                     </p>
                 </div>
-                <img src={dashboard} className='absolute right-0 pe-10 -mt-36' alt="" />
+                <div className='md:flex md:justify-center'>
+                    <img src={dashboard} className='absolute md:static right-0 pe-10 xl:pe-0 -mt-36 xg:-mt-28 lg:-mt-7 xg:h-[400px] ml:h-[350px] md:h-[70%] md:w-[70%]' alt="" />
+                </div>
             </div>
 
-            <div className='grid grid-cols-4  py-10  gap-4'>
+            <div className='grid grid-cols-4 ml:grid-cols-2 sm:grid-cols-1 py-10  gap-4'>
                 {amountList.map((amountItem) => {
                     return(
-                        <div key={amountItem.id} className='flex flex-col px-5 py-6 gap-6 items-center bg-[#D9D9D914] rounded-[15px]'>
+                        <div key={amountItem.id} className='flex flex-col px-5 md:p-3 py-6  gap-6 md:gap-3 items-center bg-[#D9D9D914] rounded-[15px]'>
                             <div className='flex flex-col  items-center'>
                                 <p className='text-[56px] text-[#F8F9FC]'>{amountItem.amount}</p> 
                                 <p className='text-[13px] text-[#EAECF5]'>{amountItem.title}</p>

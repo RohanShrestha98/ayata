@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 export default function OurWorkPage() {
   const navigate = useNavigate()
   return (
-    <div className="px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 py-16 flex flex-col gap-24 md:gap-16 sm:gap-10 ">
+    <div className="px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 py-16 flex flex-col gap-24 md:gap-10 sm:gap-8 ">
       <OurWork />
       <AboutProject
         img={dishome}
