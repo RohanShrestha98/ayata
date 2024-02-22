@@ -6,6 +6,9 @@ export default {
       xl: { max: "1280px" },
       // => @media (max-width: 1280px) { ... }
 
+      xg: { max: "1150px" },
+      // => @media (max-width: 1150px) { ... }
+
       lg: { max: "1024px" },
       // => @media (max-width: 1024px) { ... }
 

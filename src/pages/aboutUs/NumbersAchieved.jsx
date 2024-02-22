@@ -8,7 +8,7 @@ export default function NumbersAchieved() {
         {id:4, amount:"30+", title: "Team Members", message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit"},
     ]
     return (
-        <div className='grid grid-cols-4 md:grid-cols-2 md:gap-5 bg-[#1D1D20] py-10 px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4'>
+        <div className='grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1 md:gap-5 bg-[#1D1D20] py-10 px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4'>
             {amountList.map((amountItem) => {
                 return(
                     <div key={amountItem.id} className='flex flex-col px-5 gap-6 items-center'>

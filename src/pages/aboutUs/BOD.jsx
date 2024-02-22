@@ -56,7 +56,7 @@ export default function BOD() {
         }
     ];
     return (
-        <div className='px-32 flex flex-col gap-10'>
+        <div className='px-32  xl:px-24 lg:px-16 ml:px-10 sm:px-4 flex flex-col gap-10'>
             <Header title={"Board of Directors"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. libero et"}/>
             <TeamMember data={BODImages} socials/>
         </div>

@@ -4,7 +4,7 @@ import { AiFillInstagram } from "react-icons/ai";
 
 export default function TeamMember({ data, socials }) {
   return (
-    <div className="grid grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-6 md:gap-4 sm:gap-2">
+    <div className="grid grid-cols-5 ml:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 md:gap-4 sm:gap-2">
       {data?.map((team) => {
         return (
           <div
@@ -16,10 +16,10 @@ export default function TeamMember({ data, socials }) {
               className="w-full h-full object-cover rounded-lg"
               alt=""
             />
-            <h1 className="mt-2 uppercase text-[#5E5555] text-[13px] font-medium">
+            <h1 className="mt-2 uppercase text-[#5E5555] text-[13px] md:text-xs font-medium">
               {team?.name}
             </h1>
-            <h1 className="text-[#999999] text-[13px] ">
+            <h1 className="text-[#999999] text-[13px] md:text-xs">
               {team?.positionName}
             </h1>
             {socials &&
