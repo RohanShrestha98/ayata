@@ -53,20 +53,22 @@ export default function Navbar() {
   ];
   useGSAP(
     () => {
-      gsap.from(".header", {
-        duration: 2,
-        y: -140,
-      });
-      gsap.to(".header", {
-        y: 0,
-        duration: 2,
-      });
+      gsap.fromTo(
+        ".header",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 3,
+        }
+      );
     },
     { scope: header }
   );
   return (
     <div ref={header} className="top-0 border-b bg-white sticky z-30 ">
-      <div className=" header py-4 px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4  flex items-center justify-between">
+      <div className="header py-4 px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4  flex items-center justify-between">
         <Link to={"/"}>
           {" "}
           <img

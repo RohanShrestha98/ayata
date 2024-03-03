@@ -2,7 +2,6 @@ import Heading from "../../components/Heading";
 import DescriptionText from "../../components/DescriptionText";
 import project1 from "../../assets/client1.png";
 import project2 from "../../assets/client2.png";
-import laptop from "../../assets/laptop.svg";
 import fulllaptop from "../../assets/fulllaptop.svg";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";

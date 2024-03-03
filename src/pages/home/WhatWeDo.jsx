@@ -1,12 +1,18 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { GoArrowRight, GoArrowUp } from "react-icons/go";
 import project1 from "../../assets/project1.svg";
 import project2 from "../../assets/project2.svg";
 import project3 from "../../assets/project3.svg";
 import project4 from "../../assets/project4.svg";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
 
 export default function WhatWeDo() {
   const [selectedAccordian, setSelectedAccordian] = useState();
+  const whatWeDoRef = useRef();
+  gsap.registerPlugin(ScrollTrigger);
+  var tl = gsap.timeline();
   const whatWeDo = [
     {
       id: 1,
@@ -87,16 +93,43 @@ export default function WhatWeDo() {
       ],
     },
   ];
+
+  // useGSAP(
+  //   () => {
+  //     tl.fromTo(
+  //       ".whatWeDoEachIcon",
+  //       {
+  //         y: 0,
+  //         scrollTrigger: {
+  //           trigger: ".whatWeDo",
+  //           toggleActions: "restart",
+  //         },
+  //       },
+  //       {
+  //         y: -50,
+
+  //         duration: 3,
+  //       }
+  //     );
+  //   },
+  //   { scope: whatWeDoRef }
+  // );
   const projectImage = [project1, project2, project3, project4];
   return (
-    <div className="bg-[#1A1A1A] px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 py-20">
+    <div
+      ref={whatWeDoRef}
+      className="bg-[#1A1A1A] whatWeDo px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4 py-20"
+    >
       <h2 className="text-[#8CC3F2] font-normal text-xl leading-6">
         What we do
       </h2>
       <div className="flex flex-col gap-6 mt-10">
         {whatWeDo?.map((item) => {
           return (
-            <div key={item?.id} className=" border-b border-[#f9f9f9]">
+            <div
+              key={item?.id}
+              className="whatWeDoEach border-b border-[#f9f9f9]"
+            >
               <div className="flex items-center pb-6 text-white justify-between">
                 <div className="flex items-center gap-8 md:gap-6 sm:gap-4">
                   <div
@@ -104,7 +137,7 @@ export default function WhatWeDo() {
                       selectedAccordian === item?.id
                         ? "bg-[#AD961E] border-[#AD961E]"
                         : "border-white"
-                    }  text-[50px] md:text-[36px] sm:text-[22px]  rounded-full flex justify-center items-center w-[80px] md:w-15 sm:w-10  h-[80px] md:h-15 sm:h-10`}
+                    }  text-[50px] md:text-[36px] sm:text-[22px]  rounded-full flex justify-center items-center w-[80px]  md:w-15 sm:w-10  h-[80px] md:h-15 sm:h-10`}
                   >
                     {item?.id}
                   </div>
@@ -116,7 +149,7 @@ export default function WhatWeDo() {
                   onClick={() => {
                     setSelectedAccordian(item?.id);
                   }}
-                  className="border-2 cursor-pointer border-white text-[50px] md:text-[36px] sm:text-[22px] hover:text-[#1A1A1A] hover:bg-white  rounded-full flex justify-center items-center w-[80px] md:w-15 sm:w-10  h-[80px] md:h-15 sm:h-10"
+                  className="border-2 whatWeDoEachIcon cursor-pointer border-white text-[50px] md:text-[36px] sm:text-[22px] hover:text-[#1A1A1A] hover:bg-white  rounded-full flex justify-center items-center w-[80px] md:w-15 sm:w-10  h-[80px] md:h-15 sm:h-10"
                 >
                   {selectedAccordian === item?.id ? (
                     <GoArrowUp />
