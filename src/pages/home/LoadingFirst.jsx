@@ -2,53 +2,47 @@ import { useGSAP } from "@gsap/react";
 import logo from "../../../public/logo.png";
 import { useRef } from "react";
 import gsap from "gsap";
+import { TextPlugin } from "gsap/all";
 
 export default function LoadingFirst() {
   const loading = useRef();
   var tl = gsap.timeline();
-  useGSAP(
-    () => {
-      tl.to(".name", {
-        opacity: 0,
-        y: -140,
-        duration: 2,
-      })
-        .to(".desc", {
-          opacity: 0,
-          duration: 1,
-        })
-        .from(".about", {
-          opacity: 0,
-          display: "none",
-        })
-        .to(".about", {
-          opacity: 1,
-          y: -280,
-          duration: 2,
-        })
-        .from(".completeLoading", {
-          opacity: 1,
-          duration: 2,
-        })
-        .to(".completeLoading", {
-          opacity: 0,
-          duration: 2,
-          display: "none",
-        });
-    },
-    { scope: loading }
-  );
+  gsap.registerPlugin(TextPlugin);
+
   useGSAP(() => {
-    gsap.to(".desc", {
-      y: -280,
-      duration: 2,
-    });
+    tl.fromTo(
+      ".ayataInc",
+      { color: "#3F8F3D" },
+      {
+        text: " Ayata Inc.",
+        color: "#3F3D8F",
+        ease: "expo",
+        duration: 3,
+      }
+    );
+    tl.fromTo(
+      ".desc",
+      { y: 0, color: "green" },
+      { y: -200, color: "black", duration: 2 }
+    );
+    tl.fromTo(".ayataInc", { opacity: 1 }, { opacity: 0, duration: 2 });
+    tl.fromTo(".desc", { opacity: 1 }, { opacity: 0, duration: 2 });
+    tl.fromTo(
+      ".about",
+      { y: 0, display: "none", opacity: 0 },
+      { y: -280, display: "block", duration: 1, opacity: 1 }
+    );
+    tl.fromTo(
+      ".completeLoading",
+      { opacity: 1 },
+      { display: "none", duration: 2, opacity: 0 }
+    );
   });
   return (
     <div ref={loading}>
       <div className="flex flex-col h-screen md:h-full  completeLoading justify-between px-32 xl:px-24 lg:px-16 ml:px-10 sm:px-4  py-4">
         <img src={logo} className="w-10 h-10 " alt="" />
-        <h1 className="text-[#3F3D8F] text-5xl name text-center">Ayata Inc.</h1>
+        <h1 className="text-[#3F3D8F] text-5xl ayataInc  text-center"></h1>
         <div className=" font-normal desc">
           <p className="text-[#667085]   text-center text-md">
             More than 5 years ago, we envisioned ourselves as a digital game
@@ -58,7 +52,7 @@ export default function LoadingFirst() {
             And today we're proving it.
           </p>
         </div>
-        <h1 className="about text-center text-[#475467] text-3xl leading-[40px]">
+        <h1 className="about text-center text-[#475467] hidden text-3xl leading-[40px]">
           Ayata Inc creates optimized internet-based interfaces that are <br />
           accessible, interactive, functional and interoperable.
         </h1>
